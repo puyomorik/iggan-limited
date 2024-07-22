@@ -65,6 +65,8 @@ def get_fid_score(model, config: dict[str, Any], is_training=False, epoch=0):
             os.mkdir(f'cifar_generated_images/{epoch}')
         npz_filename = f'cifar_generated_images/{epoch}/samples.npz'
     else:
+        if not os.path.isdir('/cifar_generated_images'):
+            os.mkdir('cifar_generated_images')
         npz_filename = 'cifar_generated_images/samples.npz'
     print('Saving npz to %s...' % npz_filename)
 

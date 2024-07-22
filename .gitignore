@@ -1,0 +1,5 @@
+/data/
+/logs/
+/weights/cutmix_C10/
+/samples/
+/cifar_generated_images/

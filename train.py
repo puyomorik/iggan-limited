@@ -56,8 +56,9 @@ def run(config):
     # y represents a categorical label for generator Typically, the generator does not require a data loader. Its
     # primary function is to receive random noise (and possibly categorical labels, if it is a conditional GAN) and
     # generate new data samples.
-    z_, y_ = eval_utils.get_z_y(model, config)
-    fixed_z, fixed_y = eval_utils.get_z_y(model, config)
+
+    z_, y_ = eval_utils.get_z_y(G, config)
+    fixed_z, fixed_y = eval_utils.get_z_y(G, config)
     fixed_z.sample_()
     fixed_y.sample_()
 
