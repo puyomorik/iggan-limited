@@ -423,7 +423,7 @@ def prepare_parser():
     return parser
 
 
-# Arguments for sample.py; not presently used in train.py
+# Arguments for sample.py; not presently used in iggan_train.py
 
 
 def add_sample_parser(parser):

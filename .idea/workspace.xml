@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45750db9-3022-436b-bbab-c4e4e01b13ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gan_tools/model/BigGAN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gan_tools/model/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/gan_tools/model/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/iggan_train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +46,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CS Project\iggan-limited" />
+      <recent name="D:\CS Project\iggan-limited\gan_tools\model" />
       <recent name="D:\CS Project\iggan-limited\gan_tools\train_utils" />
       <recent name="D:\CS Project\iggan-limited\biggan_utils" />
-      <recent name="D:\CS Project\iggan-limited" />
       <recent name="D:\CS Project\iggan-limited\weights" />
-      <recent name="D:\CS Project\iggan-limited\benchmark" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\CS Project\iggan-limited\gan_tools" />
@@ -57,7 +60,7 @@
       <recent name="D:\CS Project\iggan-limited\model_tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.test">
     <configuration name="eval" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iggan-limited" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="iggan_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iggan-limited" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,8 +118,30 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="SCRIPT_NAME" value="D:\CS Project\iggan-limited\iggan_train.py" />
       <option name="PARAMETERS" value="--augment --shuffle --batch_size 25 --parallel --num_G_accumulations 1 --num_D_accumulations 1 --num_epochs 3 --num_samples 5000 --num_D_steps 4 --G_lr 2e-4 --D_lr 2e-4 --dataset C10 --data_root ./data/ --G_ortho 0.0 --G_attn 0 --D_attn 0 --G_init N02 --D_init N02 --ema --use_ema --ema_start 1000 --start_eval 1 --test_every 100 --save_every 100 --num_best_copies 5 --num_save_copies 2 --loss_type hinge --seed 2 --which_best FID --model BigGAN_new --alpha 0.25 --beta 0.75 --experiment_name cutmix_C10 --conditional" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="iggan-limited" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -126,14 +151,16 @@
     </configuration>
     <list>
       <item itemvalue="Python.eval_utils" />
-      <item itemvalue="Python.train" />
+      <item itemvalue="Python.iggan_train" />
+      <item itemvalue="Python.test" />
       <item itemvalue="Python.eval" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.train" />
-        <item itemvalue="Python.eval_utils" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.eval" />
+        <item itemvalue="Python.iggan_train" />
+        <item itemvalue="Python.eval_utils" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +177,7 @@
       <workItem from="1721639153032" duration="4222000" />
       <workItem from="1721643435391" duration="1496000" />
       <workItem from="1721661993829" duration="1316000" />
-      <workItem from="1721672111691" duration="736000" />
+      <workItem from="1721672111691" duration="5812000" />
     </task>
     <servers />
   </component>
@@ -158,8 +185,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/iggan_limited$eval.coverage" NAME="eval Coverage Results" MODIFIED="1721672564071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iggan_limited$eval.coverage" NAME="eval Coverage Results" MODIFIED="1721673215671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/iggan_limited$eval_utils.coverage" NAME="eval_utils Coverage Results" MODIFIED="1721672665375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gan_tools/benchmark_utils" />
     <SUITE FILE_PATH="coverage/iggan_limited$train.coverage" NAME="train Coverage Results" MODIFIED="1721672848301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iggan_limited$test.coverage" NAME="test Coverage Results" MODIFIED="1721676149237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
